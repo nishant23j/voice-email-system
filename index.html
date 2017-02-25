@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sign-Up/Login Form</title>
+  <link href="css/font.css" rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalise.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="form">
+        <div id="signup">   
+          <h1>Sign Up for Voice Mail System</h1>
+          
+          <form action="insert.php" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input name="ufname" type="text"required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input name="ulname" type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input name="uemail" type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input name="upass" type="password"required autocomplete="off"/>
+          </div>
+
+          <div class="field-wrap">
+             <label>
+              Confirm Password<span class="req">*</span>
+            </label>
+            <input name="ucpass" type="password"required autocomplete="off" />
+          </div>
+
+          <div class="field-wrap">
+            <label for="phonenum">Phone Number (format: 0xxxxxxxxxx):</label>
+           <input name="phonenum" type="tel"required autocomplete="off">
+          </div>
+
+ 
+          
+          <button name="submit" type="submit" class="button button-block"/>Sign Up</button>
+          </br>
+           </form>
+          
+          </div>
+
+         <input type="button" onclick="location.href='loginpage.html';" value="Login"class="button button-block" />
+          
+        
+
+         
+      
+      
+</div> <!-- /form -->
+  <script src='js/jquery.min.js'></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>
